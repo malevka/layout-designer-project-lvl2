@@ -1,0 +1,21 @@
+{
+  "name": "layout-designer-project-lvl2",
+  "version": "1.0.0",
+  "description": "A second project during Hexlet course of layout",
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malevka/layout-designer-project-lvl2.git"
+  },
+  "author": "Maleva Olga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malevka/layout-designer-project-lvl2/issues"
+  },
+  "homepage": "https://github.com/malevka/layout-designer-project-lvl2#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "htmlhint": "^0.14.2",
+    "surge": "^0.21.7"
+  }
+}
