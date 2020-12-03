@@ -1,11 +1,15 @@
 .header {
   display: flex;
+  align-items: center;
+  margin-top: 25px;
+
   text-transform: uppercase;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  margin-right: 100px;
 
   & img {
     width: 20px;
@@ -14,7 +18,7 @@
 
   & span {
 
-    margin: 0 100px 0 4px;
+    margin-left: 4px;
 
     font-weight: bold;
   }
@@ -22,10 +26,8 @@
 
 .menu {
   display: flex;
-  flex-grow: 1;
   justify-content: space-between;
-
-  margin-left: 335px;
+  width: 400px;
 
   color: $gray-color;
 
@@ -33,5 +35,20 @@
 }
 
 .search {
-  flex-basis: 280px;
+  margin-left: 335px;
+
+  & input {
+    box-sizing: border-box;
+
+    width: 280px;
+    height: 30px;
+
+    padding: 14px 9px;
+
+    text-transform: uppercase;
+
+    background-color: $dark-color;
+
+    border-radius: 50px;
+  }
 }
