@@ -1,0 +1,48 @@
+footer {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  gap: 100px;
+}
+
+.col {
+  & p {
+    margin-bottom: 30px;
+
+    font-size: 18px;
+  }
+
+  & li {
+    margin-bottom: 20px;
+
+    font-weight: normal;
+    font-size: 16px;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+
+  background-color: $light-gray-color;
+}
+
+.footer-menu {
+  display: flex;
+  padding: 50px 0;
+
+  font-weight: normal;
+  font-size: 16px;
+
+  & li {
+    margin-right: 40px;
+  }
+}
