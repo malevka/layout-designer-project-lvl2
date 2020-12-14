@@ -1,0 +1,62 @@
+@mixin button {
+  padding: 21px 0;
+
+  color: $white-color;
+
+  font-weight: normal;
+
+  text-transform: uppercase;
+
+  border-radius: 5px;
+}
+
+@mixin button-transparent {
+  @include button;
+
+  background: transparent;
+  border: 1px solid $white-color;
+}
+
+@mixin button-green {
+  @include button;
+  background: $green-color;
+}
+
+@mixin button-red {
+  @include button;
+
+  padding: 17px 0;
+
+  text-transform: capitalize;
+
+  background: $red-color;
+
+  border-radius: 32px;
+}
+
+@mixin input-transparent {
+  padding: 16px 0 18px 22px;
+
+  color: $white-color;
+
+  font-size: 14px;
+
+  background-color: transparent;
+
+  border: 2px solid $dark-gray-color;
+  border-radius: 3px;
+
+  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $white-color;
+
+    opacity: 1; /* Firefox */
+  }
+
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $white-color;
+  }
+
+  &::-ms-input-placeholder { /* Microsoft Edge */
+    color: $white-color;
+  }
+}

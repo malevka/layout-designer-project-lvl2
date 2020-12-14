@@ -1,0 +1,55 @@
+.subscribes {
+  display: grid;
+  grid-template-columns: repeat(3, 374px);
+  gap: 39px;
+
+  margin-bottom: 30px;
+}
+
+.subscribe-item {
+
+  height: 619px;
+
+  padding: 21px 24px;
+
+  border-radius: 5px;
+
+  &.subscribe-1 {
+    background-image: url("../images/subscribe_1.png");
+    background-size: cover;
+  }
+
+  &.subscribe-2 {
+    background-image: url("../images/subscribe_2.png");
+    background-size: cover;
+  }
+
+  &.subscribe-3 {
+    background-image: url("../images/subscribe_3.png");
+    background-size: cover;
+  }
+
+  & .price {
+    display: flex;
+    width: min-content;
+    margin: 180px auto 24px auto;
+  }
+
+  & .amount {
+    font-weight: normal;
+    font-size: $text-xxxxl;
+    line-height: 1.5em;
+  }
+
+  & .currency {
+    margin: 15px 0 0 16px;
+    line-height: 1.5em;
+    font-size: $text-lg;
+    text-transform: uppercase;
+  }
+
+  & .description {
+    font-weight: normal;
+    font-size: $text-sm;
+  }
+}

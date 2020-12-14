@@ -1,4 +1,84 @@
+/* COLORS */
+/* FONTS */
+/** POSITIONING **/
+.pos-r {
+  position: relative;
+}
+
+/** BOX MODEL **/
+.d-flex {
+  display: flex;
+}
+
+.flex-dir-c {
+  flex-direction: column;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-46 {
+  margin-bottom: 46px;
+}
+
+.pt-25 {
+  padding-top: 25px;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+/** TYPOGRAPHY **/
+.fs-16 {
+  font-size: 16px;
+}
+
+.fw-n {
+  font-weight: normal;
+}
+
+/** DECOTRATION **/
+.bg-black {
+  background-color: #08020d;
+}
+
+.txt-white {
+  color: #fff;
+}
+
 body,
+h1,
+h2,
 p,
 ul {
   margin: 0;
@@ -16,32 +96,99 @@ button {
   border-radius: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-weight: bold;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.h1 {
+  font-size: 60px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+.h2 {
+  font-size: 38px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+.h3 {
+  font-weight: normal;
+  font-size: calc(1em * 1.5);
+  line-height: 1.8em;
+  text-transform: uppercase;
+}
+
+.text-xxxxl {
+  font-size: calc(1em * (1.5 + 2.5));
+}
+
 .container {
   width: 1200px;
+  height: 100%;
   margin: 0 auto;
 }
 
-.mt-25 {
-  margin-top: 25px;
+.registration-button {
+  padding: 21px 0;
+  color: #fff;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background: #34c176;
+  grid-area: button;
+  width: 100%;
 }
 
-.pt-25 {
-  padding-top: 25px;
+.subscribe-button {
+  padding: 21px 0;
+  color: #fff;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid #fff;
+  width: 100%;
+  margin-bottom: 64px;
 }
 
-.pt-80 {
-  padding-top: 80px;
+.registration-input {
+  padding: 16px 0 18px 22px;
+  color: #fff;
+  font-size: 14px;
+  background-color: transparent;
+  border: 2px solid #cacaca;
+  border-radius: 3px;
 }
-
-.txt-white {
+.registration-input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+.registration-input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+.registration-input::-ms-input-placeholder {
+  /* Microsoft Edge */
   color: #fff;
 }
 
-.main-font {
-  color: #fff;
-  font-size: 11px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .header {
@@ -94,6 +241,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, max-content);
   gap: 100px;
+  margin-bottom: 74px;
 }
 
 .col p {
@@ -127,8 +275,68 @@ footer {
   margin-right: 40px;
 }
 
-main {
-  height: 60vh;
+.subscribes {
+  display: grid;
+  grid-template-columns: repeat(3, 374px);
+  gap: 39px;
+  margin-bottom: 30px;
+}
+
+.subscribe-item {
+  height: 619px;
+  padding: 21px 24px;
+  border-radius: 5px;
+}
+.subscribe-item.subscribe-1 {
+  background-image: url("../images/subscribe_1.png");
+  background-size: cover;
+}
+.subscribe-item.subscribe-2 {
+  background-image: url("../images/subscribe_2.png");
+  background-size: cover;
+}
+.subscribe-item.subscribe-3 {
+  background-image: url("../images/subscribe_3.png");
+  background-size: cover;
+}
+.subscribe-item .price {
+  display: flex;
+  width: min-content;
+  margin: 180px auto 24px auto;
+}
+.subscribe-item .amount {
+  font-weight: normal;
+  font-size: calc(1em * (1.5 + 2.5));
+  line-height: 1.5em;
+}
+.subscribe-item .currency {
+  margin: 15px 0 0 16px;
+  line-height: 1.5em;
+  font-size: calc(1em * (1.5 + 0.5));
+  text-transform: uppercase;
+}
+.subscribe-item .description {
+  font-weight: normal;
+  font-size: calc(1em / 1.25);
+}
+
+.banner {
+  position: relative;
+  height: 877px;
+  color: #fff;
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner .subheader {
+  margin-bottom: 32px;
+}
+
+.registration {
+  display: grid;
+  grid-template-areas: "name email" "button button";
+  gap: 30px;
+  width: 570px;
 }
 
 /*# sourceMappingURL=style.css.map */

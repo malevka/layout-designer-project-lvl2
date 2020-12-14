@@ -1,0 +1,75 @@
+/** POSITIONING **/
+.pos-r {
+  position: relative;
+}
+
+/** BOX MODEL **/
+.d-flex {
+  display: flex;
+}
+
+.flex-dir-c {
+  flex-direction: column;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-46 {
+  margin-bottom: 46px;
+}
+
+.pt-25 {
+  padding-top: 25px;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+/** TYPOGRAPHY **/
+.fs-16 {
+  font-size: 16px;
+}
+
+.fw-n {
+  font-weight: normal;
+}
+
+/** DECOTRATION **/
+.bg-black {
+  background-color: $black-color;
+}
+
+.txt-white {
+  color: $white-color;
+}

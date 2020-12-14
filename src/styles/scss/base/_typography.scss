@@ -1,0 +1,30 @@
+body {
+  font-weight: bold;
+  font-size: $text-base-size;
+  font-family: "Roboto", sans-serif;
+  color: $white-color;
+}
+
+.h1 {
+  font-size: 60px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+.h2 {
+  font-size: 38px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+.h3 {
+  font-weight: normal;
+  font-size: $text-md;
+  line-height: 1.8em;
+  text-transform: uppercase;
+}
+
+.text-xxxxl {
+
+  font-size: $text-xxxxl;
+}

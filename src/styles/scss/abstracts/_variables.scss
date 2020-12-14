@@ -1,0 +1,24 @@
+/* COLORS */
+$white-color: #fff;
+$gray-color:  #808080;
+$dark-color: #3c3b3d;
+$light-gray-color: #eee;
+$green-color: #34c176;
+$orange-color: #f89202;
+$red-color: #95390c;
+$dark-gray-color: #cacaca;
+$black-color: #08020d;
+
+/* FONTS */
+
+$text-base-size: 1em;
+$text-scale-ratio: 1.5;
+$text-small-scale-ratio: 1.25;
+
+$text-sm: calc(#{$text-base-size} / #{$text-small-scale-ratio});
+$text-md: calc(#{$text-base-size} * #{$text-scale-ratio});
+$text-lg: calc(#{$text-base-size} * (#{$text-scale-ratio} + #{0.5}));
+$text-xl: calc(#{$text-base-size} * (#{$text-scale-ratio} + #{2 * 0.5}));
+$text-xxl: calc(#{$text-base-size} * (#{$text-scale-ratio} + #{3 * 0.5}));
+$text-xxxl: calc(#{$text-base-size} * (#{$text-scale-ratio} + #{4 * 0.5}));
+$text-xxxxl: calc(#{$text-base-size} * (#{$text-scale-ratio} + #{5 * 0.5}));

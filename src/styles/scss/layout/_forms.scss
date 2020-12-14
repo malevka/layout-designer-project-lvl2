@@ -1,0 +1,7 @@
+.registration {
+  display: grid;
+  grid-template-areas: "name email" "button button";
+  gap: 30px;
+
+  width: 570px;
+}

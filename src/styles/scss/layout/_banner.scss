@@ -1,0 +1,17 @@
+.banner {
+  position: relative;
+
+  height: 877px;
+
+  color: $white-color;
+
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & .subheader {
+    margin-bottom: 32px;
+  }
+}
+
+

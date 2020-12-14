@@ -1,3 +1,12 @@
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -48,7 +57,6 @@
     text-transform: uppercase;
 
     background-color: $dark-color;
-
     border-radius: 50px;
   }
 }

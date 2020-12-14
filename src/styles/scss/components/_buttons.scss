@@ -1,0 +1,13 @@
+.registration-button {
+  @include button-green;
+
+  grid-area: button;
+  width: 100%;
+}
+
+.subscribe-button {
+  @include button-transparent;
+
+  width: 100%;
+  margin-bottom: 64px;
+}
