@@ -9,7 +9,7 @@
   href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
   rel="stylesheet">
 </head>
-<body class="main-font">
+<body>
 <header class="pt-25">
   <div class="container header">
       <div class="logo">
@@ -30,25 +30,95 @@
 
     </div>
 </header>
-<main></main>
+<section class="banner">
+  <div class="container pos-r d-flex flex-dir-c jc-c ai-c">
+    <h1 class="h1">Онлайн музыка где угодно</h1>
+    <h2 class="subheader h2">без ограничений</h2>
+    <p class="mb-16 fs-16 fw-n">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+    <form class="registration">
+      <input class="registration-input" placeholder="Имя" type="text">
+      <input class="registration-input" placeholder="Email" type="email">
+      <button class="registration-button">Получить доступ</button>
+    </form>
+  </div>
+</section>
+<main class="bg-black">
+  <section>
+    <div class="container pos-r ta-c pt-100">
+      <h2 class="h2 mb-46">Формы подписки</h2>
+      <div class="subscribes">
+        <div class="subscribe-item subscribe-1">
+          <h3 class="h3">Бесплатная</h3>
+          <div class="price">
+            <div class="amount">0</div>
+            <div class="currency">руб.</div>
+          </div>
+          <button class="subscribe-button">Оформить</button>
+          <p class="description">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
+        </div>
+        <div class="subscribe-item subscribe-2">
+          <h3 class="h3">Стандартная</h3>
+          <div class="price">
+            <div class="amount">250</div>
+            <div class="currency">руб.</div>
+          </div>
+          <button class="subscribe-button">Оформить</button>
+          <p class="description">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
+        </div>
+        <div class="subscribe-item subscribe-3">
+          <h3 class="h3">Премиум</h3>
+          <div class="price">
+            <div class="amount">500</div>
+            <div class="currency">руб.</div>
+          </div>
+          <button class="subscribe-button">Оформить</button>
+          <p class="description">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
+        </div>
+      </div>
+      <p class="fw-n">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+    </div>
+  </section>
+  <section class="news">
+    <div class="container pos-r pt-100">
+      <h2 class="h2 mb-46  ta-c">Последние новости</h2>
+      <article></article>
+      <article></article>
+    </div>
+  </section>
+  <section class="app">
+    <div class="container pos-r pt-100 pb-100">
+      <h2 class="h2 mb-46 ta-c">Мобильное приложение</h2>
+      <div class="d-flex">
+        <div class="col">
+          <p class="fw-n">Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с любого устройства на базе операционных систем Androind и iOS</p>
+          <p class="fw-n">С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции. Вы можете слушать музыку даже без интернета.</p>
+          <button>Скачать</button>
+        </div>
+        <div>
+          <img src="./images/iphone.png" alt="Three iPhones 5S"/>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 <footer>
   <div class="container footer-content pt-80">
     <div class="col">
       <p>О нас</p>
       <ul>
-        <li>История компании</li>
-        <li>Карьера</li>
-        <li>Особенности</li>
-        <li>Пресса</li>
+        <li><a href="#">История компании</a></li>
+        <li><a href="#">Карьера</a></li>
+        <li><a href="#">Особенности</a></li>
+        <li><a href="#">Пресса</a></li>
       </ul>
     </div>
     <div class="col">
       <p>Поддержка</p>
       <ul>
-        <li>База знаний</li>
-        <li>Тарифы</li>
-        <li>Мобильное приложение</li>
-        <li>Условия использования</li>
+        <li><a href="#">База знаний</a></li>
+        <li><a href="#">Тарифы</a></li>
+        <li><a href="#">Мобильное приложение</a></li>
+        <li><a href="#">Условия использования</a></li>
       </ul>
     </div>
     <div class="col">
@@ -62,20 +132,21 @@
     <div class="col">
       <p>Подписывайтесь</p>
       <ul class="social">
-        <li><a><img src="images/Google+.png"></a></li>
-        <li><a><img src="images/Twitter.png"></a></li>
-        <li><a><img src="images/Facebook.png"></a></li>
-        <li><a><img src="images/Instagram.png"></a></li>
+        <li><a href="#"><img src="images/Google+.png"></a></li>
+        <li><a href="#"><img src="images/Twitter.png"></a></li>
+        <li><a href="#"><img src="images/Facebook.png"></a></li>
+        <li><a href="#"><img src="images/Instagram.png"></a></li>
       </ul>
     </div>
   </div>
   <div class="separator"></div>
   <div class="container">
     <ul class="footer-menu">
-      <li>История компании</li>
-      <li>Карьера</li>
-      <li>Особенности</li>
-      <li>Пресса</li>
+      <li><a href="#">Магазин</a></li>
+      <li><a href="#">Обслуживание</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Поддержка</a></li>
+        <li><a href="#">Контакты</a></li>
     </ul>
   </div>
 </footer>
