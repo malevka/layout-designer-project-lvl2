@@ -1,0 +1,5 @@
+/node_modules/
+/src/styles/scss
+Makefile
+package-lock.json
+package.json

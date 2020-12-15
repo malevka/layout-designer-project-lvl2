@@ -6,3 +6,6 @@ lint:
 
 sass:
 	npx sass ./src/styles/scss/app.scss ./src/styles/style.css --watch
+
+deploy:
+	npx surge ./src/
