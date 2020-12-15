@@ -11,3 +11,24 @@
   width: 100%;
   margin-bottom: 64px;
 }
+
+.app-download-button {
+  @include button-red;
+
+  width: 131px;
+
+  font-size: $text-sm;
+}
+
+.to-album-button {
+  @include button-transparent;
+
+  width: 135px;
+
+  padding: 17px 0;
+
+  font-size: $text-sm;
+  line-height: 1.5em;
+
+  border-color: $dark-gray-color;
+}

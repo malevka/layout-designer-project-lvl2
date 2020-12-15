@@ -1,0 +1,32 @@
+.news {
+  display: flex;
+  justify-content: space-between;
+
+
+
+  &:nth-child(2n + 1) {
+    flex-direction: row-reverse;
+  }
+  &:not(:last-child) {
+    margin-bottom: 65px;
+  }
+}
+
+.news-item {
+  flex-basis: 575px;
+}
+
+.news-footer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+.news-title {
+  margin-bottom: 30px;
+
+  font-weight: normal;
+  font-size: 30px;
+}

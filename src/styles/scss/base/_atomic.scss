@@ -8,6 +8,10 @@
   display: flex;
 }
 
+.fd-row-rev {
+  flex-direction: row-reverse;
+}
+
 .flex-dir-c {
   flex-direction: column;
 }
@@ -20,6 +24,10 @@
   align-items: center;
 }
 
+.mt-16 {
+  margin-top: 16px;
+}
+
 .mt-25 {
   margin-top: 25px;
 }
@@ -28,12 +36,20 @@
   margin-top: 100px;
 }
 
+.mr-16 {
+  margin-right: 16px;
+}
+
 .mb-16 {
   margin-bottom: 16px;
 }
 
 .mb-46 {
   margin-bottom: 46px;
+}
+
+.mb-65 {
+  margin-bottom: 65px;
 }
 
 .pt-25 {
@@ -72,4 +88,12 @@
 
 .txt-white {
   color: $white-color;
+}
+
+.txt-orange {
+  color: $orange-color;
+}
+
+.txt-dark-gray {
+  color: $dark-gray-color;
 }
