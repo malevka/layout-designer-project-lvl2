@@ -1,5 +1,16 @@
 .container {
-  width: 1200px;
-  height: 100%;
+  width: 100%;
   margin: 0 auto;
+}
+
+@media (min-width: $mobile-width) {
+  .container {
+    width: 374px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1200px;
+  }
 }
