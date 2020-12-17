@@ -1,7 +1,20 @@
 .registration {
   display: grid;
-  grid-template-areas: "name email" "button button";
+
   gap: 30px;
 
-  width: 570px;
+  width: 100%;
+}
+
+@media (min-width: $mobile-width) {
+  .registration {
+    grid-template-areas: "name" "email" "button";
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .registration {
+    grid-template-areas: "name email" "button button";
+    width: 570px;
+  }
 }
