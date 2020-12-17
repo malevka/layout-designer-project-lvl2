@@ -3,15 +3,30 @@
 
   height: 877px;
 
+  padding: 250px 0 200px 0;
+
   color: $white-color;
 
   background-image: url("../images/banner.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
 
   & .subheader {
     margin-bottom: 32px;
   }
 }
 
+@media (min-width: $mobile-width) {
+  .banner {
+    background-size: auto 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner {
+    padding-top: 200px;
+
+    background-size: cover;
+  }
+}
 
