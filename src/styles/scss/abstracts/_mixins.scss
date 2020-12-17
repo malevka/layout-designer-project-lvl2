@@ -63,3 +63,15 @@
     color: $white-color;
   }
 }
+
+@mixin font-size($fs-map, $breakpoints-map: $breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if map-has-key($breakpoints-map, $fs-breakpoint) {
+      $fs-breakpoint: map-get($breakpoints-map, $fs-breakpoint);
+
+      @media (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}

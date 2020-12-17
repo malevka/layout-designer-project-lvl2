@@ -1,3 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: "Roboto", sans-serif !default;
+
+/* BREAKPOINTS */
+
+$mobile-width: 414px;
+$desktop-width: 1200px;
+
+$breakpoints: (
+  sm : $mobile-width,
+  lg : $desktop-width
+);
+
 /* COLORS */
 $white-color: #fff;
 $gray-color:  #808080;
@@ -22,3 +40,20 @@ $text-xl: calc(#{$text-base-size} * (#{$text-scale-ratio} + #{2 * 0.5}));
 $text-xxl: calc(#{$text-base-size} * (#{$text-scale-ratio} + #{3 * 0.5}));
 $text-xxxl: calc(#{$text-base-size} * (#{$text-scale-ratio} + #{4 * 0.5}));
 $text-xxxxl: calc(#{$text-base-size} * (#{$text-scale-ratio} + #{5 * 0.5}));
+
+$header-3-size: 16px;
+$h4-font-size: 18px;
+
+$h1-font-size: (
+  sm: 30px,
+  lg: 60px,
+);
+
+$h2-font-size: (
+  sm: 18px,
+  lg: 38px,
+);
+$h3-font-size: (
+  sm: 16px,
+  lg: 24px,
+);
