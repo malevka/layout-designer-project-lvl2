@@ -1,31 +1,31 @@
 .subscriptions {
   display: grid;
-  grid-template-columns: repeat(3, 374px);
-  gap: 39px;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 50px;
 
   margin-bottom: 30px;
 }
 
 .subscribe-item {
-
-  height: 619px;
+  box-sizing: border-box;
+  height: 595px;
 
   padding: 21px 24px;
 
   border-radius: 5px;
 
   &.subscribe-1 {
-    background-image: url("../images/subscribe_1.png");
+    background-image: image("subscribe_1.png", "../");
     background-size: cover;
   }
 
   &.subscribe-2 {
-    background-image: url("../images/subscribe_2.png");
+    background-image: image("subscribe_2.png", "../");
     background-size: cover;
   }
 
   &.subscribe-3 {
-    background-image: url("../images/subscribe_3.png");
+    background-image: image("subscribe_3.png", "../");
     background-size: cover;
   }
 
@@ -51,5 +51,16 @@
   & .description {
     font-weight: normal;
     font-size: $text-sm;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .subscriptions {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .subscribe-item {
+
+    height: 619px;
   }
 }
