@@ -10,7 +10,7 @@ header {
 .header {
   display: flex;
   align-items: center;
-
+  flex-wrap: wrap;
   text-transform: uppercase;
 }
 
@@ -18,6 +18,7 @@ header {
   display: flex;
   align-items: center;
   margin-right: 100px;
+  margin-bottom: 17px;
 
   & img {
     width: 20px;
@@ -26,18 +27,32 @@ header {
 
   & span {
 
-    margin-left: 4px;
+    margin-left: 16px;
 
     font-weight: bold;
+    font-size: 11px;
   }
 }
 
 .menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 400px;
+  margin-bottom: 17px;
 
   color: $gray-color;
+
+  font-size: 11px;
+
+  & li {
+    width: 100%;
+    margin-bottom: 3px;
+  }
+
+  & li.is-active {
+    color: $white-color;
+  }
 }
 
 .search {
@@ -49,7 +64,7 @@ header {
   & input {
     box-sizing: border-box;
 
-    width: 280px;
+    width: 100%;
     height: 30px;
 
     padding: 14px 9px;
@@ -58,5 +73,23 @@ header {
 
     background-color: $dark-color;
     border-radius: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu,
+  .logo {
+    margin-bottom: 0px;
+  }
+
+  .menu li {
+    width: auto;
+    margin-bottom: 0px;
+  }
+
+  .search {
+    & input {
+      width: 280px;
+    }
   }
 }
