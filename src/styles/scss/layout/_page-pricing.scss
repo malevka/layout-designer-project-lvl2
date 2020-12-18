@@ -3,7 +3,7 @@
   grid-template-rows: repeat(3, 1fr);
   gap: 50px;
 
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .subscribe-item {
@@ -43,6 +43,7 @@
 
   & .currency {
     margin: 15px 0 0 16px;
+
     line-height: 1.5em;
     font-size: $text-lg;
     text-transform: uppercase;
@@ -59,8 +60,8 @@
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
   }
-  .subscribe-item {
 
+  .subscribe-item {
     height: 619px;
   }
 }

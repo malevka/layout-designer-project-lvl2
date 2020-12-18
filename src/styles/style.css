@@ -47,8 +47,12 @@
   margin-bottom: 16px;
 }
 
-.mb-46 {
-  margin-bottom: 46px;
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
 }
 
 .mb-65 {
@@ -59,7 +63,7 @@
   padding-top: 25px;
 }
 
-.pt-80 {
+.pt-60 {
   padding-top: 80px;
 }
 
@@ -145,6 +149,9 @@ body {
   }
 }
 
+h2 {
+  margin-bottom: 50px;
+}
 @media (min-width: 414px) {
   h2 {
     font-size: 18px;
@@ -271,17 +278,19 @@ h3 {
 
 .container {
   width: 100%;
-  margin: 0 auto;
+  margin: 0 20px;
 }
 
 @media (min-width: 414px) {
   .container {
     width: 374px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
+    margin: 0 auto;
   }
 }
 header {
@@ -368,14 +377,18 @@ footer {
 
 .footer-content {
   display: grid;
-  grid-template-columns: repeat(4, max-content);
-  gap: 100px;
-  margin-bottom: 74px;
+  grid-template-rows: repeat(4, auto);
+  margin-bottom: 32px;
 }
 
+.col {
+  margin-bottom: 30px;
+}
 .col p {
   margin-bottom: 16px;
+  font-weight: bold;
   font-size: 18px;
+  text-transform: uppercase;
 }
 .col li {
   font-weight: normal;
@@ -384,7 +397,9 @@ footer {
 
 .social {
   display: flex;
-  justify-content: space-between;
+}
+.social li {
+  margin-right: 24px;
 }
 
 .separator {
@@ -395,19 +410,30 @@ footer {
 
 .footer-menu {
   display: flex;
-  padding: 40px 0 48px 0;
+  flex-wrap: wrap;
+  padding: 40px 0 32px 0;
   font-weight: normal;
-  font-size: 16px;
 }
 .footer-menu li {
-  margin-right: 15px;
+  width: 100%;
+  margin: 0 15px 16px 0;
 }
 
+@media (min-width: 1200px) {
+  .footer-content {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .footer-menu li {
+    width: auto;
+  }
+}
 .subscriptions {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .subscribe-item {
@@ -461,39 +487,33 @@ footer {
 }
 .banner {
   position: relative;
-  height: 877px;
   padding: 250px 0 200px 0;
   color: #fff;
   background-image: url("../images/banner.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: auto 100%;
 }
 .banner .subheader {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
-@media (min-width: 414px) {
-  .banner {
-    background-size: auto 100%;
-  }
-}
 @media (min-width: 1200px) {
   .banner {
     padding-top: 200px;
     background-size: cover;
   }
+  .banner .subheader {
+    margin-bottom: 32px;
+  }
 }
 .registration {
   display: grid;
+  grid-template-areas: "name" "email" "button";
   gap: 30px;
   width: 100%;
 }
 
-@media (min-width: 414px) {
-  .registration {
-    grid-template-areas: "name" "email" "button";
-  }
-}
 @media (min-width: 1200px) {
   .registration {
     grid-template-areas: "name email" "button button";
@@ -502,6 +522,7 @@ footer {
 }
 .news {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .news:nth-child(2n+1) {
@@ -514,7 +535,16 @@ footer {
 .news-item {
   flex-basis: 575px;
 }
+.news-item .article-image {
+  width: 100%;
+  margin-bottom: 50px;
+}
 
+@media (min-width: 1200px) {
+  .news-item .article-image {
+    margin-bottom: 0;
+  }
+}
 .news-footer {
   display: flex;
   align-items: center;
@@ -524,14 +554,20 @@ footer {
 }
 
 .news-title {
-  margin-bottom: 30px;
-  font-weight: normal;
-  font-size: 30px;
+  margin-bottom: 16px;
+  font-size: 1em;
 }
 
+@media (min-width: 1200px) {
+  .news-title {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+}
 .app-content {
   display: flex;
   flex-direction: row-reverse;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
