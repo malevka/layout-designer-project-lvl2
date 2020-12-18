@@ -4,16 +4,18 @@ footer {
 
 .footer-content {
   display: grid;
-  grid-template-columns: repeat(4, max-content);
-  gap: 100px;
-  margin-bottom: 74px;
+  grid-template-rows: repeat(4, auto);
+  margin-bottom: 32px;
 }
 
 .col {
+  margin-bottom: 30px;
   & p {
     margin-bottom: 16px;
 
+    font-weight: bold;
     font-size: 18px;
+    text-transform: uppercase;
   }
 
   & li {
@@ -24,7 +26,9 @@ footer {
 
 .social {
   display: flex;
-  justify-content: space-between;
+  & li {
+    margin-right: 24px;
+  }
 }
 
 .separator {
@@ -36,12 +40,25 @@ footer {
 
 .footer-menu {
   display: flex;
-  padding: 40px 0 48px 0;
+  flex-wrap: wrap;
+  padding: 40px 0 32px 0;
 
   font-weight: normal;
-  font-size: 16px;
 
   & li {
-    margin-right: 15px;
+    width: 100%;
+    margin: 0 15px 16px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-content {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .footer-menu {
+    & li {
+      width: auto;
+    }
   }
 }
