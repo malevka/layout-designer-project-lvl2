@@ -1,34 +1,120 @@
-.registration-button {
-  @include button-green;
+.btn {
+  display: inline-block;
+
+  padding: 21px 31px;
+
+  color: $white-color;
+  text-align: center;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: none;
+}
+
+.btn-square {
+  @extend .btn;
+  border-radius: 5px;
+}
+
+.btn-rounded {
+  @extend .btn;
+  border-radius: 32px;
+}
+
+.btn-transparent {
+  @extend .btn-square;
+
+  border: 1px solid $white-color;
+}
+
+.btn-green {
+  @extend .btn-square;
+
+  background-color: $green-color;
+}
+
+.btn-purple {
+  @extend .btn-square;
+  background-color: $purple-color;
+}
+
+.btn-red {
+  background-color: $red-color;
+}
+
+.btn-registrate {
+  @extend .btn-green;
 
   grid-area: button;
   width: 100%;
 }
 
-.subscribe-button {
-  @include button-transparent;
+.btn-subscribe {
+  @extend .btn-transparent;
 
   width: 100%;
   margin-bottom: 64px;
+
+  font-size: $text-base-size;
 }
 
-.app-download-button {
-  @include button-red;
+.btn-download {
+  @extend .btn-rounded;
+  @extend .btn-red;
 
   width: 131px;
 
   font-size: $text-sm;
+  text-transform: capitalize;
 }
 
-.to-album-button {
-  @include button-transparent;
+.btn-to-album {
+  @extend .btn-transparent;
 
   width: 135px;
 
   padding: 17px 0;
 
+  color: $dark-gray-color;
+
   font-size: $text-sm;
-  line-height: 1.5em;
 
   border-color: $dark-gray-color;
+}
+
+.btn-mix {
+  @extend .btn-purple;
+
+  display: flex;
+  align-items: center;
+
+  width: 200px;
+  margin: 0 25px 25px 0;
+
+  font-size: $text-sm;
+
+  & img {
+    width: 20px;
+    margin-right: 16px;
+
+    color: $white-color;
+  }
+}
+
+.btn-favorite {
+  @extend .btn-square;
+  @extend .btn-red;
+  display: flex;
+  align-items: center;
+
+  width: 200px;
+  margin: 0 25px 25px 0;
+
+  font-size: $text-sm;
+
+  & img {
+    width: 20px;
+    margin-right: 16px;
+    color: $white-color;
+  }
 }
