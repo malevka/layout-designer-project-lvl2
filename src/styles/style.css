@@ -1,3 +1,40 @@
+/*@mixin button {
+  display: inline-block;
+
+  padding: 21px 0;
+
+  color: $white-color;
+
+  font-weight: normal;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  border-radius: 5px;
+}*/
+/*@mixin button-transparent {
+  @include button;
+
+  background: transparent;
+  border: 1px solid $white-color;
+}
+
+@mixin button-green {
+  @include button;
+  background: $green-color;
+}
+
+@mixin button-red {
+  @include button;
+
+  padding: 17px 0;
+
+  text-transform: capitalize;
+
+  background: $red-color;
+
+  border-radius: 32px;
+}*/
 /* BREAKPOINTS */
 /* COLORS */
 /* FONTS */
@@ -17,6 +54,10 @@
 
 .flex-dir-c {
   flex-direction: column;
+}
+
+.fw-w {
+  flex-wrap: wrap;
 }
 
 .jc-c {
@@ -61,6 +102,10 @@
 
 .pt-25 {
   padding-top: 25px;
+}
+
+.pt-30 {
+  padding-top: 30px;
 }
 
 .pt-60 {
@@ -119,7 +164,6 @@ input,
 button {
   padding: 0;
   font-weight: inherit;
-  font-size: inherit;
   font-family: inherit;
   border: none;
   border-radius: 0;
@@ -150,7 +194,7 @@ body {
 }
 
 h2 {
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 @media (min-width: 414px) {
   h2 {
@@ -193,64 +237,89 @@ h3 {
   font-size: calc(1em * (1.5 + 2.5));
 }
 
-.registration-button {
+.btn, .btn-rounded, .btn-download, .btn-square, .btn-favorite, .btn-purple, .btn-mix, .btn-green, .btn-registrate, .btn-transparent, .btn-to-album, .btn-subscribe {
   display: inline-block;
-  padding: 21px 0;
+  padding: 21px 31px;
   color: #fff;
-  font-weight: normal;
   text-align: center;
   text-transform: uppercase;
+  background: transparent;
+  border: none;
+}
+
+.btn-square, .btn-favorite, .btn-purple, .btn-mix, .btn-green, .btn-registrate, .btn-transparent, .btn-to-album, .btn-subscribe {
   border-radius: 5px;
-  background: #34c176;
+}
+
+.btn-rounded, .btn-download {
+  border-radius: 32px;
+}
+
+.btn-transparent, .btn-to-album, .btn-subscribe {
+  border: 1px solid #fff;
+}
+
+.btn-green, .btn-registrate {
+  background-color: #34c176;
+}
+
+.btn-purple, .btn-mix {
+  background-color: #5328a1;
+}
+
+.btn-red, .btn-favorite, .btn-download {
+  background-color: #95390c;
+}
+
+.btn-registrate {
   grid-area: button;
   width: 100%;
 }
 
-.subscribe-button {
-  display: inline-block;
-  padding: 21px 0;
-  color: #fff;
-  font-weight: normal;
-  text-align: center;
-  text-transform: uppercase;
-  border-radius: 5px;
-  background: transparent;
-  border: 1px solid #fff;
+.btn-subscribe {
   width: 100%;
   margin-bottom: 64px;
+  font-size: 1em;
 }
 
-.app-download-button {
-  display: inline-block;
-  padding: 21px 0;
-  color: #fff;
-  font-weight: normal;
-  text-align: center;
-  text-transform: uppercase;
-  border-radius: 5px;
-  padding: 17px 0;
-  text-transform: capitalize;
-  background: #95390c;
-  border-radius: 32px;
+.btn-download {
   width: 131px;
   font-size: calc(1em / 1.25);
+  text-transform: capitalize;
 }
 
-.to-album-button {
-  display: inline-block;
-  padding: 21px 0;
-  color: #fff;
-  font-weight: normal;
-  text-align: center;
-  text-transform: uppercase;
-  border-radius: 5px;
-  background: transparent;
-  border: 1px solid #fff;
+.btn-to-album {
   width: 135px;
   padding: 17px 0;
+  color: #cacaca;
   font-size: calc(1em / 1.25);
-  line-height: 1.5em;
   border-color: #cacaca;
+}
+
+.btn-mix {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  margin: 0 25px 25px 0;
+  font-size: calc(1em / 1.25);
+}
+.btn-mix img {
+  width: 20px;
+  margin-right: 16px;
+  color: #fff;
+}
+
+.btn-favorite {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  margin: 0 25px 25px 0;
+  font-size: calc(1em / 1.25);
+}
+.btn-favorite img {
+  width: 20px;
+  margin-right: 16px;
+  color: #fff;
 }
 
 .registration-input {
@@ -421,8 +490,8 @@ footer {
 
 @media (min-width: 1200px) {
   .footer-content {
-    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .footer-menu li {
@@ -573,6 +642,19 @@ footer {
 
 .app-info {
   flex-basis: 600px;
+}
+
+.track {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+}
+.track img {
+  width: 55px;
+}
+
+.info {
+  flex-grow: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
