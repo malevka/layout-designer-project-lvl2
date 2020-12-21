@@ -53,8 +53,9 @@ footer {
 
 @media (min-width: $desktop-width) {
   .footer-content {
-    grid-template-columns: repeat(4, 1fr);
+
     grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
   .footer-menu {
     & li {
