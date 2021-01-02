@@ -53,6 +53,10 @@ header {
   & li.is-active {
     color: $white-color;
   }
+
+  & li.disabled {
+    color: $dark-gray-color;
+  }
 }
 
 .search {

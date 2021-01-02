@@ -409,6 +409,9 @@ header {
 .menu li.is-active {
   color: #fff;
 }
+.menu li.disabled {
+  color: #cacaca;
+}
 
 .search {
   display: flex;
