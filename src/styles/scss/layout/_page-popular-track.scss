@@ -1,13 +1,25 @@
 .track {
   display: flex;
-  flex-basis: 50%;
   align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 25px;
 
-  & img {
+  font-size: $text-sm;
+
+  & .cover {
     width: 55px;
+    margin-right: 15px;
   }
-}
 
-.info {
-  flex-grow: 1;
+  & .info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 481px;
+  }
+
+  & .title {
+    flex-grow: 1;
+  }
 }

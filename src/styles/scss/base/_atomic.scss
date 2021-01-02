@@ -72,6 +72,10 @@
   padding-top: 80px;
 }
 
+.pt-75 {
+  padding-top: 75px;
+}
+
 .pt-100 {
   padding-top: 100px;
 }
@@ -108,4 +112,8 @@
 
 .txt-dark-gray {
   color: $dark-gray-color;
+}
+
+.txt-upper {
+  text-transform: uppercase;
 }
