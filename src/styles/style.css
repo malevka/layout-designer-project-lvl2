@@ -1,40 +1,4 @@
-/*@mixin button {
-  display: inline-block;
-
-  padding: 21px 0;
-
-  color: $white-color;
-
-  font-weight: normal;
-
-  text-align: center;
-  text-transform: uppercase;
-
-  border-radius: 5px;
-}*/
-/*@mixin button-transparent {
-  @include button;
-
-  background: transparent;
-  border: 1px solid $white-color;
-}
-
-@mixin button-green {
-  @include button;
-  background: $green-color;
-}
-
-@mixin button-red {
-  @include button;
-
-  padding: 17px 0;
-
-  text-transform: capitalize;
-
-  background: $red-color;
-
-  border-radius: 32px;
-}*/
+/* PATHS */
 /* BREAKPOINTS */
 /* COLORS */
 /* FONTS */
@@ -154,6 +118,10 @@
   color: #cacaca;
 }
 
+.txt-gray {
+  color: #e0e0e0;
+}
+
 .txt-upper {
   text-transform: uppercase;
 }
@@ -161,6 +129,8 @@
 body,
 h1,
 h2,
+h3,
+h4,
 p,
 ul {
   margin: 0;
@@ -191,26 +161,26 @@ body {
 }
 
 @media (min-width: 414px) {
-  h1 {
+  .h1 {
     font-size: 30px;
   }
 }
 @media (min-width: 1200px) {
-  h1 {
+  .h1 {
     font-size: 60px;
   }
 }
 
-h2 {
+.h2 {
   margin-bottom: 48px;
 }
 @media (min-width: 414px) {
-  h2 {
+  .h2 {
     font-size: 18px;
   }
 }
 @media (min-width: 1200px) {
-  h2 {
+  .h2 {
     font-size: 38px;
   }
 }
@@ -232,6 +202,7 @@ h2 {
   }
 }
 h4 {
+  margin-top: 18px;
   font-size: 18px;
 }
 
@@ -353,23 +324,47 @@ h3 {
   color: #fff;
 }
 
-.container {
-  width: 100%;
-  margin: 0 20px;
+.banner, .banner-harket, .banner-main {
+  position: relative;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 1200px) {
+  .banner, .banner-harket, .banner-main {
+    background-size: cover;
+  }
+}
+.banner-main {
+  background-image: url("../images/banner.png");
+}
+
+.banner-harket {
+  background-image: url("../images/Morten Harket.png");
+}
+
+.container {
+  max-width: 1200px;
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*@media (min-width: $mobile-width) {
   .container {
     width: 374px;
     margin: 0 auto;
   }
 }
-@media (min-width: 1200px) {
+
+@media (min-width: $desktop-width) {
   .container {
     width: 1200px;
     margin: 0 auto;
   }
-}
+}*/
 header {
   position: absolute;
   top: 0;
@@ -407,7 +402,7 @@ header {
   justify-content: space-between;
   width: 400px;
   margin-bottom: 17px;
-  color: #808080;
+  color: #e0e0e0;
   font-size: 11px;
 }
 .menu li {
@@ -485,7 +480,7 @@ footer {
 .separator {
   width: 100%;
   height: 1px;
-  background-color: #eee;
+  background-color: #e0e0e0;
 }
 
 .footer-menu {
@@ -565,25 +560,26 @@ footer {
     height: 619px;
   }
 }
-.banner {
-  position: relative;
+.description {
+  /*position: relative;
+  */
   padding: 250px 0 200px 0;
-  color: #fff;
-  background-image: url("../images/banner.png");
+  /*color: $white-color;*/
+  /*background-image: url("../images/banner.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto 100%;
+  background-size: auto 100%;*/
 }
-.banner .subheader {
+.description .subheader {
   margin-bottom: 16px;
 }
 
 @media (min-width: 1200px) {
-  .banner {
+  .description {
     padding-top: 200px;
-    background-size: cover;
+    /*background-size: cover;*/
   }
-  .banner .subheader {
+  .description .subheader {
     margin-bottom: 32px;
   }
 }
@@ -675,6 +671,17 @@ footer {
 }
 .track .title {
   flex-grow: 1;
+}
+
+.disc {
+  margin: 0 0 25px 0;
+  max-width: 300px;
+  width: 50%;
+}
+.disc .cover {
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
