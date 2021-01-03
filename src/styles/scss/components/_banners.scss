@@ -1,0 +1,25 @@
+.banner {
+  position: relative;
+
+  color: $white-color;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+@media (min-width: $desktop-width) {
+  .banner {
+    background-size: cover;
+  }
+}
+
+.banner-main {
+  @extend .banner;
+  background-image: image("banner.png");
+}
+
+.banner-harket {
+  @extend .banner;
+  background-image: image("Morten Harket.png");
+}

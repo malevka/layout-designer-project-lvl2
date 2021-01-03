@@ -1,14 +1,14 @@
-.banner {
-  position: relative;
-
+.description {
+  /*position: relative;
+*/
   padding: 250px 0 200px 0;
 
-  color: $white-color;
+  /*color: $white-color;*/
 
-  background-image: url("../images/banner.png");
+  /*background-image: url("../images/banner.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto 100%;
+  background-size: auto 100%;*/
 
   & .subheader {
     margin-bottom: 16px;
@@ -16,10 +16,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .banner {
+  .description {
     padding-top: 200px;
 
-    background-size: cover;
+    /*background-size: cover;*/
 
     & .subheader {
       margin-bottom: 32px;
