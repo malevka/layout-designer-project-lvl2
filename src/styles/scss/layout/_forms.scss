@@ -1,14 +1,21 @@
 .registration {
-  display: grid;
-  grid-template-areas: "name" "email" "button";
-  gap: 30px;
-
+  @include flex-container($spacing: space-between, $wrap: wrap);
+  margin: 0 auto;
+  max-width: 370px;
   width: 100%;
 }
 
-@media (min-width: $desktop-width) {
+.registration-field {
+  @extend .input-transparent;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $medium-width) {
+  .registration-field {
+    max-width: 270px;
+  }
   .registration {
-    grid-template-areas: "name email" "button button";
-    width: 570px;
+    max-width: 570px;
   }
 }
