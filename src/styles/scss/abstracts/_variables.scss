@@ -12,12 +12,12 @@ $text-font-stack: "Roboto", sans-serif !default;
 
 /* BREAKPOINTS */
 
-$mobile-width: 414px;
-$desktop-width: 1200px;
+$small-width: 576px;
+$medium-width: 768px;
 
 $breakpoints: (
-  sm : $mobile-width,
-  lg : $desktop-width
+  sm : $small-width,
+  md : $medium-width
 );
 
 /* COLORS */
@@ -49,15 +49,18 @@ $header-3-size: 16px;
 $h4-font-size: 18px;
 
 $h1-font-size: (
+  null: 30px,
   sm: 30px,
-  lg: 60px,
+  md: 60px,
 );
 
 $h2-font-size: (
+  null: 18px,
   sm: 18px,
-  lg: 38px,
+  md: 38px,
 );
 $h3-font-size: (
+  null: 16px,
   sm: 16px,
-  lg: 24px,
+  md: 24px,
 );
