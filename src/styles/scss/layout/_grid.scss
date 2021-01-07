@@ -1,20 +1,9 @@
 .container {
-  max-width: 1200px;
-  min-width: 320px;
   width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-/*@media (min-width: $mobile-width) {
-  .container {
-    width: 374px;
-    margin: 0 auto;
-  }
+.section {
+  padding: 0 20px;
 }
-
-@media (min-width: $desktop-width) {
-  .container {
-    width: 1200px;
-    margin: 0 auto;
-  }
-}*/

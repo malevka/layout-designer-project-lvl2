@@ -11,78 +11,78 @@
     rel="stylesheet">
 </head>
 <body>
-<header class="pt-30">
-  <div class="container header">
+<header class="header section">
+  <div class="header-wrapper container pt-25">
       <div class="logo">
-        <img src="images/logo.svg">
-        <span>music box</span>
+        <img class="icon" src="images/logo.svg">
+        <div class="title">music box</div>
       </div>
-      <nav>
+      <nav class="nav">
         <ul class="menu">
-          <li class="is-active"><a href="#">главная</a></li>
-          <li class="disabled"><a href="#" class="disabled">каталог</a></li>
-          <li><a href="artist.html">исполнители</a></li>
-          <li class="disabled"><a href="#">контакты</a></li>
+          <li class="item is-active"><a href="#">главная</a></li>
+          <li class="item disabled"><a href="#">каталог</a></li>
+          <li class="item"><a href="artist.html">исполнители</a></li>
+          <li class="item disabled"><a href="#">контакты</a></li>
         </ul>
       </nav>
       <div class="search">
-        <input placeholder="поиск..">
+        <input class="input-search input-gray"placeholder="поиск..">
       </div>
 
     </div>
 </header>
-<section class="banner-main">
-  <div class="container pos-r d-flex flex-dir-c jc-c ai-c description">
-    <h1 class="h1 ta-c">Онлайн музыка где угодно</h1>
+<section class="banner-main section">
+  <div class="description container txt-align-c">
+    <h1 class="h1">Онлайн музыка где угодно</h1>
     <h2 class="h2 subheader">без ограничений</h2>
-    <p class="mb-16 ta-c">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+    <p class="mb-16">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
     <form class="registration">
-      <input class="registration-input" placeholder="Имя" type="text">
-      <input class="registration-input" placeholder="Email" type="email">
+      <input class="registration-field" placeholder="Имя" type="text">
+      <input class="registration-field" placeholder="Email" type="email">
       <button class="btn-registrate">Получить доступ</button>
     </form>
   </div>
 </section>
-<main class="bg-black">
+<main class="section bg-black">
   <section>
     <div class="container pos-r pt-100">
-      <h2 class="h2 ta-c">Формы подписки</h2>
-      <div class="subscriptions ta-c">
+      <h2 class="h2 txt-align-c">Формы подписки</h2>
+      <div class="subscriptions txt-align-c">
         <div class="subscribe-item subscribe-1">
-          <h3>Бесплатная</h3>
+          <h3 class="h3">Бесплатная</h3>
           <div class="price">
             <div class="amount">0</div>
             <div class="currency">руб.</div>
           </div>
           <button class="btn-subscribe">Оформить</button>
-          <p class="description">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
+          <p class="price-description">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
         </div>
         <div class="subscribe-item subscribe-2">
-          <h3>Стандартная</h3>
+          <h3 class="h3">Стандартная</h3>
           <div class="price">
             <div class="amount">250</div>
             <div class="currency">руб.</div>
           </div>
           <button class="btn-subscribe">Оформить</button>
-          <p class="description">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
+          <p class="price-description">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
         </div>
         <div class="subscribe-item subscribe-3">
-          <h3>Премиум</h3>
+          <h3 class="h3">Премиум</h3>
           <div class="price">
             <div class="amount">500</div>
             <div class="currency">руб.</div>
           </div>
           <button class="btn-subscribe">Оформить</button>
-          <p class="description">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
+          <p class="price-description">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
         </div>
       </div>
-      <p class="ta-c fw-n">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+      <p class="txt-align-c fw-n">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
     </div>
   </section>
   <section>
-    <div class="container pos-r pt-100">
-      <h2 class="h2 ta-c">Последние новости</h2>
-      <article class="news">
+    <div class="container pt-100">
+      <h2 class="h2 txt-align-c">Последние новости</h2>
+      <article class="news mb-65">
         <div class="news-item">
           <img class="article-image" src="images/Music%20to%20Be%20Murdered%20By.png" alt="Eminem" />
         </div>
@@ -97,11 +97,11 @@
           <a href="#" class="btn-to-album">К альбому</a>
         </div>
       </article>
-      <article class="news">
+      <article class="news direction-rtl">
         <div class="news-item">
           <img class="article-image" src="images/Ordinary%20Man.png" alt="Ozzy Osbourne" />
         </div>
-        <div class="news-item">
+        <div class="news-item direction-ltr">
           <p class="news-title">Ordinary Man</p>
           <p class="mb-24 txt-dark-gray">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box</p>
           <div class="news-footer">
@@ -115,11 +115,11 @@
     </div>
   </section>
   <section>
-    <div class="container pos-r pt-100 pb-100">
-      <h2 class="h2 mb-48 ta-c">Мобильное приложение</h2>
+    <div class="container pt-100 pb-100">
+      <h2 class="h2 mb-48 txt-align-c">Мобильное приложение</h2>
       <div class="app-content">
-        <div class="app-info ta-c">
-          <img src="./images/iphone.png" alt="Three iPhones 5S" />
+        <div class="app-info txt-align-c">
+          <img class="app-image" src="./images/iphone.png" alt="Three iPhones 5S" />
         </div>
         <div class="app-info">
           <p class="fw-n mt-16 txt-dark-gray">Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с любого устройства на базе операционных систем Androind и iOS</p>
@@ -130,7 +130,7 @@
     </div>
   </section>
 </main>
-<footer>
+<footer class="section">
   <div class="container footer-content pt-60">
     <div class="col">
       <p>О нас</p>

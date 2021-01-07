@@ -96,7 +96,7 @@
   padding-bottom: 100px;
 }
 
-.ta-c {
+.txt-align-c {
   text-align: center;
 }
 
@@ -132,4 +132,12 @@
 
 .txt-upper {
   text-transform: uppercase;
+}
+
+.direction-rtl {
+  direction: rtl;
+}
+
+.direction-ltr {
+  direction: ltr;
 }

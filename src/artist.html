@@ -11,36 +11,37 @@
     rel="stylesheet">
 </head>
 <body>
-<header class="pt-30">
-  <div class="container header">
+<header class="header section">
+  <div class="header-wrapper container pt-25">
       <div class="logo">
-        <img src="images/logo.svg">
-        <span>music box</span>
+        <img class="icon" src="images/logo.svg">
+        <div class="title">music box</div>
       </div>
-      <nav>
+      <nav class="nav">
         <ul class="menu">
-          <li><a href="index.html">главная</a></li>
-          <li class="disabled"><a href="#">каталог</a></li>
-          <li class="is-active"><a href="#">исполнители</a></li>
-          <li class="disabled"><a href="#">контакты</a></li>
+          <li class="item"><a href="index.html">главная</a></li>
+          <li class="item disabled"><a href="#">каталог</a></li>
+          <li class="item is-active"><a href="#">исполнители</a></li>
+          <li class="item disabled"><a href="#">контакты</a></li>
         </ul>
       </nav>
       <div class="search">
-        <input placeholder="поиск..">
+        <input class="input-search input-gray"placeholder="поиск..">
       </div>
+
     </div>
 </header>
-<section class="banner-harket">
-  <div class="container pos-r d-flex flex-dir-c jc-c  description">
+<section class="banner-harket section">
+  <div class="description container">
     <h1 class="h1 mb-16">Morten Harket</h1>
     <p class="mb-48">24 875 поклонников</p>
     <div class="d-flex fw-w">
       <button class="btn-mix"><img src="images/play-button.svg" alt="A play button icon"/>Микс</button>
-      <button class="btn-favorite"><img src="images/heart.svg" alt="A heart icon"/> В ИЗБРАННОЕ</button>
+      <button class="btn-favorite"><img src="images/heart.svg" alt="A heart icon"/> В избранное</button>
     </div>
   </div>
 </section>
-<main class="bg-black pr-20 pl-20">
+<main class="section bg-black">
   <section id="page-popular-track">
     <div class="container pos-r pt-100">
       <h2 class="h2">Популярные треки</h2>
