@@ -19,7 +19,7 @@ body {
   @include font-size($h3-font-size);
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $medium-width) {
   .h3 {
     font-weight: normal;
   }

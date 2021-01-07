@@ -51,7 +51,7 @@ footer {
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $medium-width) {
   .footer-content {
 
     grid-template-rows: 1fr;
