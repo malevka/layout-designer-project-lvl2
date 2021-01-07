@@ -1,38 +1,32 @@
-@mixin input-transparent {
-  padding: 16px 0 18px 22px;
-
-  color: $white-color;
-
-  font-size: 14px;
-
-  background-color: transparent;
-
-  border: 2px solid $dark-gray-color;
-  border-radius: 3px;
-
-  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: $white-color;
-
-    opacity: 1; /* Firefox */
-  }
-
-  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: $white-color;
-  }
-
-  &::-ms-input-placeholder { /* Microsoft Edge */
-    color: $white-color;
-  }
-}
 
 @mixin font-size($fs-map, $breakpoints-map: $breakpoints) {
   @each $fs-breakpoint, $fs-font-size in $fs-map {
-    @if map-has-key($breakpoints-map, $fs-breakpoint) {
-      $fs-breakpoint: map-get($breakpoints-map, $fs-breakpoint);
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
 
-      @media (min-width: $fs-breakpoint) {
-        font-size: $fs-font-size;
+    @else {
+      @if map-has-key($breakpoints-map, $fs-breakpoint) {
+        $fs-breakpoint: map-get($breakpoints-map, $fs-breakpoint);
+
+        @media (min-width: $fs-breakpoint) {
+          font-size: $fs-font-size;
+        }
       }
     }
   }
+}
+
+@mixin flex-container($direction: row, $wrap: nowrap, $spacing: null, $alignment: null) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  align-items: $alignment;
+  justify-content: $spacing;
+}
+
+@mixin flexible-grid-container($min-width: 280px, $gap: null) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+  gap: $gap;
 }
