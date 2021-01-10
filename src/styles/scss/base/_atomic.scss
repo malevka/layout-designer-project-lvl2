@@ -8,23 +8,23 @@
   display: flex;
 }
 
-.fd-row-rev {
+.flex-dir-row-rev {
   flex-direction: row-reverse;
 }
 
-.flex-dir-c {
+.flex-dir-col {
   flex-direction: column;
 }
 
-.fw-w {
+.flex-wrap-wrap {
   flex-wrap: wrap;
 }
 
-.jc-c {
+.justify-content-ctr {
   justify-content: center;
 }
 
-.ai-c {
+.align-items-ctr {
   align-items: center;
 }
 
@@ -68,10 +68,6 @@
   padding-top: 30px;
 }
 
-.pt-60 {
-  padding-top: 80px;
-}
-
 .pt-75 {
   padding-top: 75px;
 }
@@ -96,7 +92,7 @@
   padding-bottom: 100px;
 }
 
-.txt-align-c {
+.txt-align-ctr {
   text-align: center;
 }
 
@@ -105,9 +101,14 @@
   font-size: 16px;
 }
 
-.fw-n {
+.font-weight-normal {
   font-weight: normal;
 }
+
+.txt-upper {
+  text-transform: uppercase;
+}
+
 
 /** DECOTRATION **/
 .bg-black {
@@ -130,9 +131,6 @@
   color: $gray-color;
 }
 
-.txt-upper {
-  text-transform: uppercase;
-}
 
 .direction-rtl {
   direction: rtl;

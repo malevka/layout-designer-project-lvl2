@@ -4,23 +4,23 @@
   margin-bottom: 40px;
 }
 
-.subscribe-item {
+.subscription-item {
   height: 619px;
   padding: 21px 24px;
 
   border-radius: 16px;
 
-  &.subscribe-1 {
+  &.free {
     background-image: image("subscribe_1.png", "../");
     background-size: cover;
   }
 
-  &.subscribe-2 {
+  &.standard {
     background-image: image("subscribe_2.png", "../");
     background-size: cover;
   }
 
-  &.subscribe-3 {
+  &.premium {
     background-image: image("subscribe_3.png", "../");
     background-size: cover;
   }
@@ -47,6 +47,6 @@
   }
 }
 
-.subscribe-description {
+.subscription-info {
   font-size: $text-sm;
 }
