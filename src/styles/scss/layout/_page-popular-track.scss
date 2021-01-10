@@ -1,6 +1,9 @@
+.tracks {
+  @include flex-container($wrap: wrap, $alignment: center);
+}
 .track {
-  display: flex;
-  align-items: center;
+  @include flex-container($alignment: center);
+
   width: 100%;
   max-width: 600px;
   margin-bottom: 25px;
@@ -13,8 +16,8 @@
   }
 
   & .info {
-    display: flex;
-    align-items: center;
+    @include flex-container($alignment: center);
+
     width: 100%;
     max-width: 481px;
   }

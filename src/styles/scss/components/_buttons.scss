@@ -9,6 +9,8 @@
 
   background: transparent;
   border: none;
+
+  cursor: pointer;
 }
 
 .btn-square {
@@ -84,8 +86,7 @@
 .btn-mix {
   @extend .btn-purple;
 
-  display: flex;
-  align-items: center;
+  @include flex-container($alignment: center);
 
   width: 200px;
   margin: 0 25px 25px 0;
@@ -103,8 +104,7 @@
 .btn-favorite {
   @extend .btn-square;
   @extend .btn-red;
-  display: flex;
-  align-items: center;
+  @include flex-container($alignment: center);
 
   width: 200px;
   margin: 0 25px 25px 0;

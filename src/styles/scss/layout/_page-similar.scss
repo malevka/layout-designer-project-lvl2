@@ -1,3 +1,7 @@
+.artists {
+  @include flex-container($wrap: wrap, $alignment: center);
+}
+
 .artist {
   box-sizing: border-box;
   width: 50%;
