@@ -1,5 +1,5 @@
 .footer {
-  padding: 61px 0 32px 0;
+  padding: 62px 0 32px 0;
 
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
@@ -17,8 +17,15 @@
 .social {
   @include flex-container();
 
+  margin-bottom: 4px;
+
   & .social-item {
     margin-right: 24px;
+  }
+
+  & .social-item-link {
+    display: block;
+    line-height: 0;
   }
 }
 
@@ -26,7 +33,7 @@
   width: 100%;
   height: 1px;
 
-  margin-top: 73px;
+  margin-top: 75px;
   margin-bottom: 40px;
 
   background-color: $gray-color;
@@ -44,5 +51,12 @@
 @media (min-width: $medium-width) {
   .footer-menu-item {
     width: auto;
+  }
+
+  .footer {
+    padding-top: 61px;
+  }
+  .separator {
+    margin-top: 73px;
   }
 }
