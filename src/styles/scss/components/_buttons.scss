@@ -31,7 +31,7 @@
 
 .btn-green {
   @extend .btn-square;
-
+  line-height: 1.15em;
   background-color: $green-color;
 }
 
