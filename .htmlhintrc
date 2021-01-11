@@ -12,7 +12,6 @@
   "attr-value-not-empty": false,
   "alt-require": true,
   "input-requires-label": false,
-  "tags-check": true,
   "tag-pair": true,
   "tag-self-close": false,
   "tagname-lowercase": true,
