@@ -40,6 +40,10 @@
   margin-top: 25px;
 }
 
+.mt-50 {
+  margin-top: 50px;
+}
+
 .mt-100 {
   margin-top: 100px;
 }
@@ -628,7 +632,7 @@ body {
 
 @media (min-width: 768px) {
   .description {
-    padding-top: 200px;
+    padding-top: 199px;
     padding-bottom: 199px;
   }
   .description .subheader {
