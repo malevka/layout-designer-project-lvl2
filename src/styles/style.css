@@ -460,7 +460,6 @@ body {
 }
 .menu .item {
   width: 100%;
-  margin-bottom: 3px;
 }
 .menu .item.is-active {
   color: #fff;
@@ -651,7 +650,7 @@ body {
 
 .registration-field {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 @media (min-width: 768px) {
