@@ -15,11 +15,11 @@
 .logo {
   @include flex-container( $alignment: center);
   width: 100%;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 
   & .icon {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     margin-right: 16px;
   }
 
@@ -45,7 +45,6 @@
 
   & .item {
     width: 100%;
-    margin-bottom: 3px;
   }
 
   & .item.is-active {
