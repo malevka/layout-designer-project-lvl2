@@ -5,7 +5,7 @@
 }
 
 .subscription-item {
-  height: 619px;
+  height: 595px;
   padding: 21px 24px;
 
   border-radius: 16px;
@@ -49,4 +49,10 @@
 
 .subscription-info {
   font-size: $text-sm;
+}
+
+@media (min-width: $medium-width) {
+  .subscription-item {
+    height: 615px;
+  }
 }

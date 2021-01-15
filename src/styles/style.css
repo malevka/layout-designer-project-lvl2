@@ -580,7 +580,7 @@ body {
 }
 
 .subscription-item {
-  height: 619px;
+  height: 595px;
   padding: 21px 24px;
   border-radius: 16px;
 }
@@ -620,6 +620,11 @@ body {
   font-size: calc(1em / 1.25);
 }
 
+@media (min-width: 768px) {
+  .subscription-item {
+    height: 615px;
+  }
+}
 .description {
   padding-top: 248px;
   padding-bottom: 200px;
