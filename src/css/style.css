@@ -142,7 +142,7 @@ body {
 }
 
 .btn-green, .btn-registrate {
-  line-height: 1.25;
+  line-height: 1.1;
   background-color: #34c176;
 }
 
@@ -506,10 +506,10 @@ body {
 @media (min-width: 768px) {
   .description {
     padding-top: 175px;
-    padding-bottom: 200px;
+    padding-bottom: 203px;
   }
   .description .artist-name {
-    margin-top: 74px;
+    margin-top: 71px;
   }
   .description .subheader {
     margin-bottom: 32px;
