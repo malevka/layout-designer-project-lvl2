@@ -605,7 +605,7 @@ body {
   align-items: center;
   width: 100%;
   max-width: 600px;
-  margin-bottom: 25px;
+  /*margin-bottom: 25px;*/
   font-size: calc(1em / 1.25);
 }
 .track .cover {
@@ -727,6 +727,10 @@ body {
 
 .mb-65 {
   margin-bottom: 65px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
 }
 
 .pt-25 {
