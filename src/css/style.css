@@ -186,7 +186,7 @@ body {
   flex-wrap: nowrap;
   align-items: center;
   width: 200px;
-  margin: 0 25px 25px 0;
+  margin: 0 24px 24px 0;
   font-size: calc(1em / 1.25);
 }
 .btn-mix img {
@@ -506,10 +506,10 @@ body {
 @media (min-width: 768px) {
   .description {
     padding-top: 175px;
-    padding-bottom: 203px;
+    padding-bottom: 202px;
   }
   .description .artist-name {
-    margin-top: 71px;
+    margin-top: 73px;
   }
   .description .subheader {
     margin-bottom: 32px;
