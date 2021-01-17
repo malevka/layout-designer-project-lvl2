@@ -582,14 +582,20 @@ body {
 .app-info {
   width: 100%;
   max-width: 600px;
+  max-height: 278px;
   direction: ltr;
 }
 
 .app-image {
-  width: 333px;
+  width: 100%;
   margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  .app-image {
+    width: 333px;
+  }
+}
 .tracks {
   /* @include flex-container($wrap: wrap, $alignment: center);*/
   display: grid;
