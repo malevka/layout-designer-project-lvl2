@@ -659,12 +659,11 @@ body {
   box-sizing: border-box;
   width: 50%;
   max-width: 300px;
-  margin: 0 0 25px 0;
+  margin: 25px 0 0 0;
   padding-right: 50px;
   text-align: center;
 }
 .artist .photo {
-  display: block;
   width: 100%;
 }
 
@@ -720,6 +719,10 @@ body {
 
 .mb-16 {
   margin-bottom: 16px;
+}
+
+.mb-23 {
+  margin-bottom: 23px;
 }
 
 .mb-24 {
