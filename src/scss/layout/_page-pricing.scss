@@ -5,8 +5,7 @@
 }
 
 .subscription-item {
-  height: 595px;
-  padding: 21px 24px;
+  padding: 15px 24px 65px 24px;
 
   border-radius: 16px;
 
@@ -40,9 +39,8 @@
   & .currency {
     margin: 15px 0 0 16px;
 
-    line-height: 1.5em;
-
     font-size: $text-lg;
+    line-height: 1.5em;
     text-transform: uppercase;
   }
 }
@@ -53,6 +51,10 @@
 
 @media (min-width: $medium-width) {
   .subscription-item {
-    height: 615px;
+    padding-top: 21px;
+
+    & .price {
+      margin-top: 184px;
+    }
   }
 }

@@ -137,6 +137,7 @@ body {
 }
 
 .btn-transparent, .btn-to-album, .btn-subscribe {
+  padding: 20px 31px;
   border: 1px solid #fff;
 }
 
@@ -160,6 +161,7 @@ body {
 .btn-subscribe {
   width: 100%;
   margin-bottom: 64px;
+  line-height: 1.5;
   font-size: 1em;
 }
 
@@ -443,8 +445,7 @@ body {
 }
 
 .subscription-item {
-  height: 595px;
-  padding: 21px 24px;
+  padding: 15px 24px 65px 24px;
   border-radius: 16px;
 }
 .subscription-item.free {
@@ -474,8 +475,8 @@ body {
 }
 .subscription-item .currency {
   margin: 15px 0 0 16px;
-  line-height: 1.5em;
   font-size: calc(1em * (1.5 + 0.5));
+  line-height: 1.5em;
   text-transform: uppercase;
 }
 
@@ -485,7 +486,10 @@ body {
 
 @media (min-width: 768px) {
   .subscription-item {
-    height: 615px;
+    padding-top: 21px;
+  }
+  .subscription-item .price {
+    margin-top: 184px;
   }
 }
 .description {
