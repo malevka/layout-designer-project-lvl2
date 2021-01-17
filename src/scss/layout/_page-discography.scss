@@ -1,11 +1,11 @@
 .discography {
-  @include flex-container($wrap: wrap, $alignment: center);
+  @include flex-container($wrap: wrap);
 }
 .disc {
   box-sizing: border-box;
   width: 50%;
   max-width: 300px;
-  margin: 0 0 25px 0;
+  margin: 25px 0 0 0;
   padding-right: 50px;
 
   & .cover {
