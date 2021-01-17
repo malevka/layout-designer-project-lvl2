@@ -64,8 +64,9 @@
   @extend .btn-rounded;
   @extend .btn-red;
 
-  width: 131px;
+  padding: 17px 41px;
 
+  line-height: $text-scale-ratio;
   font-size: $text-sm;
   text-transform: capitalize;
 }

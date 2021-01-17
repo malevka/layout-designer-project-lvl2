@@ -1,5 +1,5 @@
 .app-content {
-  @include flexible-grid-container(280px, 16px);
+  @include flexible-grid-container(280px, 16px, 0);
   direction: rtl;
 }
 
@@ -11,5 +11,6 @@
 }
 
 .app-image {
-  width: 100%;
+  width: 333px;
+  margin: 0 auto;
 }

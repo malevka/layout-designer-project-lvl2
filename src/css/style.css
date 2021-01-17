@@ -42,6 +42,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 /**
  * Basic typography style for copy text
  */
@@ -160,7 +164,8 @@ body {
 }
 
 .btn-download {
-  width: 131px;
+  padding: 17px 41px;
+  line-height: 1.5;
   font-size: calc(1em / 1.25);
   text-transform: capitalize;
 }
@@ -570,7 +575,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   column-gap: 16px;
-  row-gap: 16px;
+  row-gap: 0;
   direction: rtl;
 }
 
@@ -581,14 +586,16 @@ body {
 }
 
 .app-image {
-  width: 100%;
+  width: 333px;
+  margin: 0 auto;
 }
 
 .tracks {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
+  /* @include flex-container($wrap: wrap, $alignment: center);*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(374px, 1fr));
+  column-gap: 48px;
+  row-gap: 25px;
 }
 
 .track {
