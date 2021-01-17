@@ -27,7 +27,7 @@
   & .price {
     @include flex-container($spacing: center);
     width: min-content;
-    margin: 180px auto 24px auto;
+    margin: 184px auto 24px auto;
   }
 
   & .amount {
@@ -51,10 +51,10 @@
 
 @media (min-width: $medium-width) {
   .subscription-item {
-    padding-top: 21px;
+    padding-top: 18px;
 
     & .price {
-      margin-top: 184px;
+      margin-top: 189px;
     }
   }
 }

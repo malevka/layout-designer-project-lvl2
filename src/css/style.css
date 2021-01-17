@@ -466,7 +466,7 @@ body {
   flex-wrap: nowrap;
   justify-content: center;
   width: min-content;
-  margin: 180px auto 24px auto;
+  margin: 184px auto 24px auto;
 }
 .subscription-item .amount {
   font-weight: normal;
@@ -486,10 +486,10 @@ body {
 
 @media (min-width: 768px) {
   .subscription-item {
-    padding-top: 21px;
+    padding-top: 18px;
   }
   .subscription-item .price {
-    margin-top: 184px;
+    margin-top: 189px;
   }
 }
 .description {
