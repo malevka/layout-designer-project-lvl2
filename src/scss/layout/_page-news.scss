@@ -3,7 +3,9 @@
 }
 
 .article-image {
-    width: 100%;
+  display: block;
+  width: 100%;
+  height: 186px;
 }
 
 .news-footer {
@@ -11,7 +13,12 @@
 
   margin-bottom: 48px;
 
+  font-size: $text-sm;
   text-transform: uppercase;
+}
+
+.avatar {
+  width: 19px;
 }
 
 .news-title {
@@ -25,5 +32,9 @@
     margin-bottom: 30px;
 
     font-size: 30px;
+  }
+
+  .article-image {
+    height: 286px;
   }
 }

@@ -5,7 +5,7 @@ lint:
 	npx htmlhint ./src/*.html
 
 sass:
-	npx sass ./src/styles/scss/app.scss ./src/styles/style.css --watch
+	npx sass ./src/scss/app.scss ./src/css/style.css --watch
 
 deploy:
 	npx surge ./src/
