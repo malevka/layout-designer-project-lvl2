@@ -607,7 +607,6 @@ body {
   }
 }
 .tracks {
-  /* @include flex-container($wrap: wrap, $alignment: center);*/
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(374px, 1fr));
   column-gap: 48px;
@@ -621,7 +620,6 @@ body {
   align-items: center;
   width: 100%;
   max-width: 600px;
-  /*margin-bottom: 25px;*/
   font-size: calc(1em / 1.25);
 }
 .track .cover {
@@ -638,6 +636,9 @@ body {
 }
 .track .title {
   flex-grow: 1;
+}
+.track .artist-name {
+  color: #e0e0e0;
 }
 
 .discography {

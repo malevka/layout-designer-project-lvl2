@@ -1,5 +1,4 @@
 .tracks {
- /* @include flex-container($wrap: wrap, $alignment: center);*/
   @include flexible-grid-container(374px, 48px, 25px);
 }
 .track {
@@ -7,7 +6,6 @@
 
   width: 100%;
   max-width: 600px;
-  /*margin-bottom: 25px;*/
 
   font-size: $text-sm;
 
@@ -25,5 +23,9 @@
 
   & .title {
     flex-grow: 1;
+  }
+
+  & .artist-name {
+    color: $gray-color;
   }
 }
