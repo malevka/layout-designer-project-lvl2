@@ -1,6 +1,7 @@
 .tracks {
   @include flexible-grid-container(374px, 48px, 25px);
 }
+
 .track {
   @include flex-container($alignment: center);
 

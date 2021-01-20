@@ -1,8 +1,8 @@
 .registration {
   @include flex-container($spacing: space-between, $wrap: wrap);
-  margin: 0 auto;
-  max-width: 370px;
   width: 100%;
+  max-width: 370px;
+  margin: 0 auto;
 }
 
 .registration-field {
@@ -15,6 +15,7 @@
   .registration-field {
     max-width: 270px;
   }
+
   .registration {
     max-width: 570px;
   }

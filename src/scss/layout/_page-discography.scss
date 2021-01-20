@@ -1,6 +1,7 @@
 .discography {
   @include flex-container($wrap: wrap);
 }
+
 .disc {
   box-sizing: border-box;
   width: 50%;

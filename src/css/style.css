@@ -161,14 +161,14 @@ body {
 .btn-subscribe {
   width: 100%;
   margin-bottom: 64px;
-  line-height: 1.5;
   font-size: 1em;
+  line-height: 1.5;
 }
 
 .btn-download {
   padding: 17px 41px;
-  line-height: 1.5;
   font-size: calc(1em / 1.25);
+  line-height: 1.5;
   text-transform: capitalize;
 }
 
@@ -228,12 +228,12 @@ body {
   opacity: 1;
   /* Firefox */
 }
-.input-transparent:-ms-input-placeholder, .registration-field:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #fff;
-}
 .input-transparent::-ms-input-placeholder, .registration-field::-ms-input-placeholder {
   /* Microsoft Edge */
+  color: #fff;
+}
+.input-transparent:-ms-input-placeholder, .registration-field:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   color: #fff;
 }
 
@@ -520,9 +520,9 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 auto;
-  max-width: 370px;
   width: 100%;
+  max-width: 370px;
+  margin: 0 auto;
 }
 
 .registration-field {
