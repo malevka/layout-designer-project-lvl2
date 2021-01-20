@@ -549,7 +549,6 @@ body {
 .news-image {
   display: block;
   width: 100%;
-  border-right: 1px solid transparent;
 }
 
 .news-footer {
@@ -575,6 +574,16 @@ body {
   .news-title {
     margin-bottom: 30px;
     font-size: 30px;
+  }
+}
+@media (max-width: 414px) {
+  .news-image {
+    height: 186px;
+  }
+}
+@media (min-width: 1240px) {
+  .news-image {
+    height: 286px;
   }
 }
 .app-content {

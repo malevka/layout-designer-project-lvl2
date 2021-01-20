@@ -5,7 +5,7 @@
 .news-image {
   display: block;
   width: 100%;
-  border-right: 1px solid transparent;
+
 }
 
 .news-footer {
@@ -32,5 +32,17 @@
     margin-bottom: 30px;
 
     font-size: 30px;
+  }
+}
+
+@media (max-width: $xs-width) {
+  .news-image {
+    height: 186px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .news-image {
+    height: 286px;
   }
 }
