@@ -51,7 +51,7 @@ img {
  */
 body {
   color: #fff;
-  font: normal 1em / 1.5 "Roboto", sans-serif;
+  font: normal 1em/1.5 "Roboto", sans-serif;
 }
 
 .h1 {
@@ -307,7 +307,6 @@ body {
 }
 
 .nav {
-  min-width: 314px;
   margin-bottom: 15px;
 }
 
@@ -577,18 +576,6 @@ body {
     font-size: 30px;
   }
 }
-/*
-@media (max-width: $xs-width) {
-  .news-image {
-    height: 186px;
-  }
-}
-
-@media (min-width: $large-width) {
-  .news-image {
-    height: 286px;
-  }
-}*/
 .app-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -711,6 +698,10 @@ body {
 
 .mr-16 {
   margin-right: 16px;
+}
+
+.mr-24 {
+  margin-right: 24px;
 }
 
 .mb-16 {
