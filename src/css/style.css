@@ -117,45 +117,36 @@ body {
   font-size: calc(1em * (1.5 + 2.5));
 }
 
-.btn, .btn-rounded, .btn-download, .btn-square, .btn-favorite, .btn-purple, .btn-mix, .btn-green, .btn-registrate, .btn-transparent, .btn-to-album, .btn-subscribe {
+.btn {
   display: inline-block;
-  padding: 21px 31px;
+  padding: 21px 30px;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
   background: transparent;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.btn-square, .btn-favorite, .btn-purple, .btn-mix, .btn-green, .btn-registrate, .btn-transparent, .btn-to-album, .btn-subscribe {
-  border-radius: 5px;
-}
-
-.btn-rounded, .btn-download {
-  border-radius: 32px;
-}
-
-.btn-transparent, .btn-to-album, .btn-subscribe {
-  padding: 20px 31px;
+.btn-transparent {
   border: 1px solid #fff;
 }
 
-.btn-green, .btn-registrate {
-  line-height: 1.1;
+.btn-green {
   background-color: #34c176;
 }
 
-.btn-purple, .btn-mix {
+.btn-purple {
   background-color: #5328a1;
 }
 
-.btn-red, .btn-favorite, .btn-download {
+.btn-red {
   background-color: #95390c;
 }
 
 .btn-registrate {
-  width: 100%;
+  line-height: 1.1;
 }
 
 .btn-subscribe {
@@ -170,11 +161,12 @@ body {
   font-size: calc(1em / 1.25);
   line-height: 1.5;
   text-transform: capitalize;
+  border-radius: 32px;
 }
 
 .btn-to-album {
-  width: 135px;
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: #cacaca;
   font-size: calc(1em / 1.25);
   border-color: #cacaca;

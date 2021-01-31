@@ -1,7 +1,7 @@
 .btn {
   display: inline-block;
 
-  padding: 21px 31px;
+  padding: 21px 30px;
 
   color: $white-color;
   text-align: center;
@@ -9,37 +9,19 @@
 
   background: transparent;
   border: none;
-
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.btn-square {
-  @extend .btn;
-  border-radius: 5px;
-}
-
-.btn-rounded {
-  @extend .btn;
-  border-radius: 32px;
-}
-
 .btn-transparent {
-  @extend .btn-square;
-  padding: 20px 31px;
-
   border: 1px solid $white-color;
 }
 
 .btn-green {
-  @extend .btn-square;
-
-  line-height: 1.1;
-
   background-color: $green-color;
 }
 
 .btn-purple {
-  @extend .btn-square;
   background-color: $purple-color;
 }
 
@@ -48,14 +30,10 @@
 }
 
 .btn-registrate {
-  @extend .btn-green;
-
-  width: 100%;
+  line-height: 1.1;
 }
 
 .btn-subscribe {
-  @extend .btn-transparent;
-
   width: 100%;
   margin-bottom: 64px;
 
@@ -64,22 +42,19 @@
 }
 
 .btn-download {
-  @extend .btn-rounded;
-  @extend .btn-red;
-
   padding: 17px 41px;
 
   font-size: $text-sm;
   line-height: $text-scale-ratio;
+
   text-transform: capitalize;
+
+  border-radius: 32px;
 }
 
 .btn-to-album {
-  @extend .btn-transparent;
-
-  width: 135px;
-
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   color: $dark-gray-color;
 
@@ -89,8 +64,6 @@
 }
 
 .btn-mix {
-  @extend .btn-purple;
-
   @include flex-container($alignment: center);
 
   width: 200px;
@@ -107,9 +80,6 @@
 }
 
 .btn-favorite {
-  @extend .btn-square;
-  @extend .btn-red;
-
   @include flex-container($alignment: center);
 
   width: 200px;
