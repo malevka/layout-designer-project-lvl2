@@ -17,12 +17,7 @@ body {
 
 .h3 {
   @include font-size($h3-font-size);
-}
-
-@media (min-width: $medium-width) {
-  .h3 {
-    font-weight: normal;
-  }
+  font-weight: normal;
 }
 
 .h4 {

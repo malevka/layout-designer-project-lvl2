@@ -85,6 +85,7 @@ body {
 
 .h3 {
   font-size: 16px;
+  font-weight: normal;
 }
 @media (min-width: 576px) {
   .h3 {
@@ -97,11 +98,6 @@ body {
   }
 }
 
-@media (min-width: 768px) {
-  .h3 {
-    font-weight: normal;
-  }
-}
 .h4 {
   margin-top: 18px;
   font-size: 18px;
@@ -146,12 +142,15 @@ body {
 }
 
 .btn-registrate {
+  width: 100%;
   line-height: 1.1;
 }
 
 .btn-subscribe {
   width: 100%;
   margin-bottom: 64px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 1em;
   line-height: 1.5;
 }
@@ -477,7 +476,7 @@ body {
 
 @media (min-width: 768px) {
   .subscription-item {
-    padding-top: 18px;
+    padding-top: 21px;
   }
   .subscription-item .price {
     margin-top: 189px;
@@ -584,15 +583,10 @@ body {
 }
 
 .app-image {
-  width: 100%;
+  width: 333px;
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-  .app-image {
-    width: 333px;
-  }
-}
 .tracks {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(374px, 1fr));

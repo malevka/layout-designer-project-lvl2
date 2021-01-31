@@ -12,12 +12,6 @@
 }
 
 .app-image {
-  width: 100%;
+  width: 333px;
   margin: 0 auto;
-}
-
-@media (min-width: $medium-width) {
-  .app-image {
-    width: 333px;
-  }
 }
