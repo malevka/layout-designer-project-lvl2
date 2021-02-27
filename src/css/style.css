@@ -171,7 +171,7 @@ body {
   border-color: #cacaca;
 }
 
-.btn-mix {
+.btn-icon {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -180,22 +180,7 @@ body {
   margin: 0 24px 24px 0;
   font-size: calc(1em / 1.25);
 }
-.btn-mix img {
-  width: 20px;
-  margin-right: 16px;
-  color: #fff;
-}
-
-.btn-favorite {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  width: 200px;
-  margin: 0 24px 24px 0;
-  font-size: calc(1em / 1.25);
-}
-.btn-favorite img {
+.btn-icon img {
   width: 20px;
   margin-right: 16px;
   color: #fff;

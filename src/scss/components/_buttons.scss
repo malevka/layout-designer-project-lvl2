@@ -68,23 +68,7 @@
   border-color: $dark-gray-color;
 }
 
-.btn-mix {
-  @include flex-container($alignment: center);
-
-  width: 200px;
-  margin: 0 24px 24px 0;
-
-  font-size: $text-sm;
-
-  & img {
-    width: 20px;
-    margin-right: 16px;
-
-    color: $white-color;
-  }
-}
-
-.btn-favorite {
+.btn-icon {
   @include flex-container($alignment: center);
 
   width: 200px;
